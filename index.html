@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <title>Dribbble</title>
+</head>
+<body>
+    <header class="bg-info">
+     <nav class="navbar navbar-expand-lg  p-4">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <h1 class=" fs-4 fst-italic">Dribbble</h1>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3 mx-4">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Find talent</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Inspiration</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Learn design</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Jobs</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Go Pro</a>
+              </li> 
+            </ul>
+            <div class="d-flex gap-1">
+                <button class="btn fw-bold">Log in</button>
+                <button class="btn btn-dark rounded-5 py-3 px-4 fw-bold">Sign up</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section>
+        <div class="text-center mt-5 mb-2">
+            <span class="bg-body-secondary rounded-5 py-2 px-3 fw-bold ">Over 3 million ready-to-work creatives!</span>
+            <h1 class="fs-1 display-1 p-4 w-75 mx-auto">Work with the world’s top creative talent.</h1>
+            <p class="fs-5">Connect with millions of top-rated designers & agencies around the world.
+            </p>
+            <button class="btn btn-dark rounded-5 m-2 py-3 px-4 fw-bold">Start hiring today</button>
+        </div>
+        <!-- animation -->
+        <!-- <div class="animation-container">
+          <div class="holder">
+          
+          </div>
+        </div> -->
+
+
+
+
+      </section>    
+    </header>
+    <main style="width: 100%; height: auto; overflow: hidden;">
+      <section class="contain mt-5">
+        <div class="con row mt-5 ">
+            <div class="first col-3 col-md-3">
+                <video id="tvideo" class="rounded-5"  autoplay muted loop src="Vidoes/third-man.mp4" type="video/mp4" ></video>
+                <div class="overlay fw-semibold">
+                    <p>Jesse showalter</p>
+                    <form>
+                        <p>Design Director</p>
+                        <div class="row">
+                            <div class="col-3">
+                                <p class=" rounded-5">UI/UX</p>
+                            </div>
+                            <div class="col-3">
+                                <p class=" rounded-5">Design</p>
+                            </div>
+                            <div class="col-5">
+                                <p class="rounded-5 w-100">Programming</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="second col-3 col-md-3">
+                <video id="tvideo" class="rounded-5 " autoplay muted loop src="Vidoes/fourth-video.mp4" type="video/mp4" ></video>
+                <div class="overlay fw-semibold">
+                    <p>Jesse showalter</p>
+                    <form>
+                        <p>Design Director</p>
+                        <div class="row fw-semibold">
+                            <div class="col-3">
+                                <p class="rounded-5">UI/UX</p>
+                            </div>
+                            <div class="col-3">
+                                <p class=" rounded-5">Design</p>
+                            </div>
+                            <div class="col-5">
+                                <p class=" fs-6 rounded-5 w-100">Programming</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="third col-3 col-md-3">
+                <video id="tvideo" class="rounded-5" autoplay muted loop src="Vidoes/fifth-video.mp4" type="video/mp4" ></video>
+                <div class="overlay2 fw-semibold">
+                    <p>Jesse showalter</p>
+                    <form>
+                        <p>Design Director</p>
+                        <div class="row">
+                            <div class="col-3">
+                                <p class=" rounded-5">UI/UX</p>
+                            </div>
+                            <div class="col-3">
+                                <p class=" rounded-5">Design</p>
+                            </div>
+                            <div class="col-5">
+                                <p class=" rounded-5 w-100">Programming</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="fourth col-3 col-md-3">
+                <video id="tvideo" class="rounded-5" autoplay muted loop src="Vidoes/fourth-video.mp4" type="video/mp4" ></video>
+                <div class="overlay2 fw-semibold">
+                    <p>Jesse showalter</p>
+                    <form>
+                        <p>Design Director</p>
+                        <div class="row">
+                            <div class="col-3">
+                                <p class=" rounded-5">UI/UX</p>
+                            </div>
+                            <div class="col-3">
+                                <p class="rounded-5">Design</p>
+                            </div>
+                            <div class="col-5">
+                                <p class="rounded-5 w-100">Programming</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="cont row mt-5">
+            <div class="fifth col-3 col-md-3">
+                <video id="tvideo" class="rounded-5" autoplay muted loop src="Vidoes/first-video.mp4" type="video/mp4" ></video>
+                <div class="overlay2 fw-semibold">
+                    <p>Jesse showalter</p>
+                    <form>
+                        <p>Design Director</p>
+                        <div class="row">
+                            <div class="col-3">
+                                <p class=" rounded-5">UI/UX</p>
+                            </div>
+                            <div class="col-3">
+                                <p class="rounded-5">Design</p>
+                            </div>
+                            <div class="col-5">
+                                <p class=" rounded-5 w-100">Programming</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="sixth col-3 m-0 col-md-3">
+                <video id="tvideo" class="rounded-5"  autoplay muted loop src="Vidoes/" type="video/mp4" ></video>
+                <div class="overlay2 fw-semibold">
+                    <p>Jesse showalter</p>
+                    <form>
+                        <p>Design Director</p>
+                        <div class="row">
+                            <div class="col-3">
+                                <p class="rounded-5">UI/UX</p>
+                            </div>
+                            <div class="col-3">
+                                <p class="rounded-5">Design</p>
+                            </div>
+                            <div class="col-5">
+                                <p class="rounded-5 w-100">Programming</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="seventh col-3 col-md-3">
+                <video id="tvideo" class="rounded-5" autoplay muted loop src="Vidoes/second-video.mp4" type="video/mp4" ></video>
+                <div class="overlay2 fw-semibold">
+                    <p>Jesse showalter</p>
+                    <form>
+                        <p>Design Director</p>
+                        <div class="row">
+                            <div class="col-3">
+                                <p class=" rounded-5">UI/UX</p>
+                            </div>
+                            <div class="col-3">
+                                <p class=" rounded-5">Design</p>
+                            </div>
+                            <div class="col-5">
+                                <p class="ounded-5 w-100">Programming</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="eighth col-3 col-md-3">
+                <video id="tvideo" class="rounded-5"  autoplay muted loop src="Vidoes/first-video.mp4" type="video/mp4" ></video>
+                <div class="overlay2 fw-semibold">
+                    <p>Jesse showalter</p>
+                    <form>
+                        <p>Design Director</p>
+                        <div class="row">
+                            <div class="col-3">
+                                <p class="\rounded-5">UI/UX</p>
+                            </div>
+                            <div class="col-3">
+                                <p class="rounded-5">Design</p>
+                            </div>
+                            <div class="col-5">
+                                <p class="rounded-5 w-100">Programming</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+            
+            
+
+      </section>
+      <section>
+        <div class="text-center container mt-5">
+          <h1 class="display-4"> Explore inspiring designs</h1>
+        </div> 
+        <div class="row container mx-auto mb-5 mt-5">
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 14-58-25.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 15-31-16.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">muti</p>
+                    <p class="bg-secondary-subtle text-white px-2 pe-2 ms-2 fs-6 w-100">TEAM</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 15-35-48.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill fst-normal">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 15-37-46.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images34.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row container mx-auto mb-5 mt-5">
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 15-39-36.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 15-44-04.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 15-45-55.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 15-48-08.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">muti</p>
+                    <p class="bg-secondary-subtle text-white px-2 pe-2 ms-2 fs-6 w-100">TEAM</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row container mx-auto mb-5 mt-5">
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 15-49-00.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">muti</p>
+                    <p class="bg-secondary-subtle text-white px-2 pe-2 ms-2 fs-6 w-100">TEAM</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 15-50-44.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">muti</p>
+                    <p class="bg-secondary-subtle text-white px-2 pe-2 ms-2 fs-6 w-100">TEAM</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 15-51-41.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">muti</p>
+                    <p class="bg-secondary-subtle text-white px-2 pe-2 ms-2 fs-6 w-100">TEAM</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 15-52-36.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">muti</p>
+                    <p class="bg-secondary-subtle text-white px-2 pe-2 ms-2 fs-6 w-100">TEAM</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row container mx-auto mb-5 mt-5">
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 15-54-52.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">muti</p>
+                    <p class="bg-secondary-subtle text-white px-2 pe-2 ms-2 fs-6 w-100">TEAM</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 15-55-31.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">muti</p>
+                    <p class="bg-secondary-subtle text-white px-2 pe-2 ms-2 fs-6 w-100">TEAM</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 15-57-13.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">muti</p>
+                    <p class="bg-secondary-subtle text-white px-2 pe-2 ms-2 fs-6 w-100">TEAM</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 15-57-38.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">muti</p>
+                    <p class="bg-secondary-subtle text-white px-2 pe-2 ms-2 fs-6 w-100">TEAM</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row container mx-auto mb-5 mt-5">
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 15-59-37.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">muti</p>
+                    <p class="bg-secondary-subtle text-white px-2 pe-2 ms-2 fs-6 w-100">TEAM</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 15-59-58.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">muti</p>
+                    <p class="bg-secondary-subtle text-white px-2 pe-2 ms-2 fs-6 w-100">TEAM</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 16-00-21.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 16-00-47.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row container mx-auto mb-5 mt-5">
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 16-06-19.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 16-06-47.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 16-07-12.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 16-07-34.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row container mx-auto mb-5 mt-5">
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 14-58-25.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 15-31-16.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 15-35-48.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 15-37-46.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row container mx-auto mb-5 mt-5">
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 15-39-36.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 15-44-04.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 15-45-55.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 15-48-08.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row container mx-auto mb-5 mt-5">
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 15-49-00.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 15-50-44.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 15-51-41.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 15-52-36.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row container mx-auto mb-5 mt-5">
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 15-54-52.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 15-55-31.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 15-57-13.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 15-57-38.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row container mx-auto mb-5 mt-5">
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 15-59-37.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 15-59-58.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 16-00-21.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 16-00-47.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row container mx-auto mb-5 mt-5">
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 16-06-19.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 16-06-47.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 16-07-12.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12">
+            <div class="card border-0">
+              <img src="./images/Screenshot Capture - 2023-10-25 - 16-07-34.png" class="card-img-top" alt="...">
+              <div class="row mb-3 mt-2">
+                <div class="col-6 d-flex">
+                    <img src="./images/images32.jpg" class="w-25 h-50 me-2 rounded-circle" alt="">
+                    <p class="w-100 text-secondary fw-bold">tubik</p>
+                    <p class="bg-secondary-subtle text-white px-1 pe-2 ms-2 fs-6 w-100">PRO</p>
+                </div>
+                <div class="d-flex text-secondary justify-content-end col-6 gap-2">
+                    <i class="bi-suit-heart-fill">155</i>
+                    <i class="bi-eye-fill">7.1k</i>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mb-5">
+          <button class="btn border border-dark-subtle fw-bold px-4 py-3 rounded-5">Browse more inspiration</button>
+        </div>
+      </section>
+      <section class="design pt-5 p-5 my-5 mt-5" style="background-color: rgb(255,218,121);">
+        <div class="container pt-5">
+            <h1 class="text-center mx-auto pt-3 fs-1" style="max-width: 30rem; ;">Find your next designer today</h1>
+            <p class="fs-4 text-center mx-auto pt-3 lh-5" style="max-width: 44rem;">The world’s leading brands use Dribbble to hire creative talent. Browse millions of top-rated portfolios to find your perfect creative match.</p>
+            <div class="btn mx-auto w-100 mt-3">
+                 <button class="p-3 border-0 rounded-5 mb-2 bg-dark text-white">
+                    Get started now
+                </button>
+                <button class="p-3 border-0 rounded-5 bg-light-subtle fw-medium mx-3">
+                    Learn about hiring
+                </button>
+                <p class="pt-5 py-5 fs-4">Are you a designer? <a href="" class="text-dark">join Dribbble</a></p>
+            </div>
+           
+        </div>
+       </section>
+
+      <section class="scroll">
+        <div class="container-fluid mt-5 my-5">
+            <marquee class="w-100" behavior="scroll" direction="left">
+                <div class="container d-flex">
+                    <div class="container ">
+                        <img src="./images/Screenshot Capture - 2023-10-25 - 16-06-19.png" style="width: 15rem; border-radius: 20px;" alt="">
+                        <p class="fw-bolder pt-2">Animation</p>
+                    </div>
+                    <div class="container">
+                        <img src="./images/Screenshot Capture - 2023-10-25 - 15-50-44.png" style="width: 15rem; border-radius: 20px;"  alt="">
+                        <p class="fw-bolder pt-2">Typography</p>
+                    </div>
+                    <div class="container">
+                        <img src="./images/Screenshot Capture - 2023-10-25 - 15-39-36.png" style="width: 15rem; border-radius: 20px;"  alt="">
+                        <p class="fw-bolder pt-2">Web design</p>
+                    </div>
+                    <div class="container">
+                        <img src="./images/Screenshot Capture - 2023-10-25 - 16-07-34.png" style="width: 15rem; border-radius: 20px;"  alt="">
+                        <p class="fw-bolder pt-2">Illustration</p>
+                    </div>
+                    <div class="container">
+                        <img src="./images/Screenshot Capture - 2023-10-25 - 15-31-16.png" style="width: 15rem; border-radius: 20px;" alt="">
+                        <p class="fw-bolder pt-2">Product design</p>
+                    </div>
+                    <div class="container">
+                        <img src="./images/Screenshot Capture - 2023-10-25 - 15-35-48.png" style="width: 15rem; border-radius: 20px;" alt="">
+                        <p class="fw-bolder pt-2">Branding</p>
+                    </div>
+                    <div class="container">
+                        <img src="./images/Screenshot Capture - 2023-10-25 - 16-06-47.png" style="width: 15rem; border-radius: 20px;" alt="">
+                        <p class="fw-bolder pt-2">Print</p>
+                    </div>
+                    <div class="container">
+                        <img src="./images/Screenshot Capture - 2023-10-25 - 15-55-31.png" style="width: 15rem; border-radius: 20px;" alt="">
+                        <p class="fw-bolder pt-2">Mobile</p>
+                    </div>
+                    <div class="container">
+                        <img src="./images/Screenshot Capture - 2023-10-25 - 15-48-08.png" style="width: 15rem; border-radius: 20px;" alt="">
+                        <p class="fw-bolder pt-2">UI/UX</p>
+                    </div>
+                </div>
+                
+            </marquee>
+        </div>
+    </section>
+    </main>
+    <footer>
+      <section class="footer">
+          <div class="container-fluid px-5">
+              <div class="row d-flex justify-content-between">
+                  <div class="col-12 col-md-12 col-lg-2">
+                      <h1 class="text-center">Dribbble</h1>
+                  </div>
+                  <div class="col-12 col-md-12 col-lg-9 d-flex justify-content-between align-content-center py-3">
+                      <div class="row justify-content-between">
+                          <p class="col-6 col-md-3">For designers</p>
+                          <p class="col-6 col-md-2">Hire talent</p>
+                          <p class="col-6 col-md-1">Inspiration</p>
+                          <p class="col-6 col-md-2 px-2 px-md-5">Advertising</p>
+                          <p class="col-6 col-md-1">Blog</p>
+                          <p class="col-6 col-md-1">About</p>
+                          <p class="col-6 col-md-1">Careers</p>
+                          <p class="col-6 col-md-1">Support</p>
+                      </div>
+                      
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-1 py-3 d-flex justify-content-between">
+                      <i class="bi-twitter fs-6"></i>
+                      <i class="bi-facebook fs-6"></i>
+                      <i class="bi-instagram fs-6"></i>
+                      <i class="bi-pinterest fs-6"></i>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="last">
+          <div class="container">
+              <div class="row justify-content-around">
+                  <div class="col-9 col-md-3 d-flex mx-md-0 mx-auto">
+                      <p>&copy;2023 Dribbble</p>
+                      <p>Terms</p>
+                      <p>Privacy</p>
+                      <p>Cookies</p>
+                  </div>
+                  <div class="col-md-6 col-12"></div>
+                  <div class="col-11 col-md-3 d-flex mx-md-0 mx-auto">
+                      <p>Jobs</p>
+                      <p>Designers</p>
+                      <p>Freelancers</p>
+                      <p>Tags</p>
+                      <p>Places</p>
+                      <p>Resources</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

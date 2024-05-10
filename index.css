@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+
+
+.bg-info{
+    background-color: #F8F7F4 !important;
+}
+
+.fs-1{
+    font-size: 60px !important;
+    font-family: 'Merriweather', serif;
+}
+
+.bg-success-subtle{
+    background-color: #FFDA79 !important;
+}
+
+
+.contain{
+    width: 160rem;
+    height: 70vh;
+    display: flex !important;
+    overflow: hidden;
+    animation: slide 40s linear infinite;
+    margin-top: 5rem;
+}
+.first{ 
+    position:relative; 
+    border-radius: 10px;
+    width: 25%;
+    height: 89%;
+}
+.second{ 
+    position:relative; 
+    border-radius: 10px;
+    width: 25%;
+    height: 89%;
+}
+video {
+    position:relative;
+    z-index:0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+video:hover{
+    opacity: .9;
+    background-color: black;
+}
+.overlay {
+    position:absolute;
+    width: 70%;
+    top:70%;
+    left:10%;
+    z-index:1;
+    color: white;
+}
+.overlay2{
+    position:absolute;
+    width: 70%;
+    top:70%;
+    left:10%;
+    z-index:1;
+    color: white;
+}
+.con{
+    width: 300rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+.cont{
+    width: 300rem;
+    height: 100%;
+    display: flex;
+    overflow-x: hidden;
+}
+.third{
+    position:relative; 
+    border-radius: 10px;
+    width: 25%;
+    height: 89%;
+}
+.fourth{
+    position:relative; 
+    border-radius: 10px;
+    width: 25%;
+    height: 89%;
+}
+.fifth{
+    position:relative; 
+    border-radius: 10px;
+    width: 25%;
+    height: 89%;
+    margin-left: 2rem;
+}
+.sixth{
+    position:relative; 
+    border-radius: 10px;
+    width: 25%;
+    height: 89%;
+}
+.seventh{
+    position:relative; 
+    border-radius: 10px;
+    width: 25%;
+    height: 89%;
+}
+.eighth{
+    position:relative; 
+    border-radius: 10px;
+    width: 25%;
+    height: 89%;
+}
+.ninth{
+    position:relative; 
+    border-radius: 10px;
+    width: 25%;
+    height: 89%;
+}
+#tvideo{
+    border-radius: 3rem !important;
+}
+
+@keyframes slide {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-60rem, 0, 0); /* The image width */
+    }
+  }
+  
+
+
+
+/* first animation */
+
+/* .animation-container{
+    width: 100%;
+    height: 70vh;
+    overflow-x: hidden;
+    position: relative;
+    margin-top: 10px;
+   
+
+} */
+
+/* .holder{
+    width: 170%;
+    height: 70vh;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    animation: holder 100s linear infinite;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    background-repeat: repeat-x;
+    overflow-x: hidden;
+    overflow: hidden;
+    background-color: yellow;
+
+}
+
+@keyframes holder{
+    100%{
+        transform: translateX(-3400px);
+    }
+} */
+
+/* .cards{
+    background-color: peru;
+    height: 50vh;
+    width: 15%;
+    border-radius: 30px;
+}
+
+.cards:nth-of-type(3){
+    background-image: url(./images/images31.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.cards:nth-of-type(1){
+    background-image: url(./images/images32.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.cards:nth-of-type(2){
+    background-image: url(./images/images33.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.cards:nth-of-type(4){
+    background-image: url(./images/images34.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.cards:nth-of-type(5){
+    background-image: url(./images/images31\ \(1\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.cards:nth-of-type(6){
+    background-image: url(./images/images31\ \(2\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cards:nth-of-type(7){
+    background-image: url(./images/images32\ \(1\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cards:nth-of-type(8){
+    background-image: url(./images/images32\ \(2\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+} */
+
+/* .cards-img img{
+    width: 250px;
+    height: 300px;
+} */
+
+
+
+
+
+
+/* second animation */
+
+.container-animation{
+    width: 100%;
+    height: 50vh;
+    overflow-x: hidden;
+    position: relative;
+    margin-top: 10px;
+
+}
+
+.animation-holder{
+    width: 130%;
+    height: 50vh;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    animation: animation-holder 100s linear infinite;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow: hidden;
+    /* background-repeat: repeat-x;
+    background-repeat: repeat; */
+}
+@keyframes animation-holder{
+    100%{
+        transform: translateX(-3400px);
+    }
+    
+}
+
+.box{
+    width: 16%;
+    height: 30vh;
+    
+}
+
+.card-image{
+    height: 25vh;
+    
+}
+
+.card-image img{
+    width: 200px;
+    height: 150px;
+}
+
+.card-image:nth-of-type(3){
+    background-image: url(./images/Screenshot\ Capture\ -\ 2023-10-25\ -\ 16-06-47.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
